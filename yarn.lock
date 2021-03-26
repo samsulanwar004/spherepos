@@ -5901,11 +5901,6 @@ react-native-macos@^0.63.0-0:
     use-subscription "^1.0.0"
     whatwg-fetch "^3.0.0"
 
-react-native-my-sql-connection@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-native-my-sql-connection/-/react-native-my-sql-connection-1.0.4.tgz#67dfdc522a783c7096226418fe0bd9a6fe354012"
-  integrity sha512-HVZ/HR9imKEaeM4BMlvrFDEnbDA/1s6goyT8N9UGjkui0/kLuSnGtATBOOX9CGGFaNPOwQs9cFPXr/hNR0kMBg==
-
 react-native-ratings@^7.3.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/react-native-ratings/-/react-native-ratings-7.5.0.tgz#1c6ca3713f4a9068ad2c35504119bb14f08614f4"

@@ -238,8 +238,6 @@ PODS:
     - React-cxxreact (= 0.63.23)
     - React-jsi (= 0.63.23)
   - React-jsinspector (0.63.23)
-  - react-native-my-sql-connection (1.0.4):
-    - React
   - react-native-safe-area-context (3.2.0):
     - React-Core
   - React-RCTActionSheet (0.63.23):
@@ -381,7 +379,6 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native-macos/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native-macos/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native-macos/ReactCommon/jsinspector`)
-  - react-native-my-sql-connection (from `../node_modules/react-native-my-sql-connection`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `../node_modules/react-native-macos/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native-macos/Libraries/NativeAnimation`)
@@ -448,8 +445,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-macos/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native-macos/ReactCommon/jsinspector"
-  react-native-my-sql-connection:
-    :path: "../node_modules/react-native-my-sql-connection"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
@@ -513,7 +508,6 @@ SPEC CHECKSUMS:
   React-jsi: d94c378d2f53c4161d18e6faa2332d983b16bfd5
   React-jsiexecutor: ecdf4db28766cd5e6cf7224affc40906fe384d4e
   React-jsinspector: c3e7f191acbd5ec43b9e7605b28c2a72be903154
-  react-native-my-sql-connection: 4fe00988b21ad212227c6770a31ada48e980d680
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
   React-RCTActionSheet: f08f247739d22c4761782c6f64694d705bae1a38
   React-RCTAnimation: 91475020d5b286feeb26a2b8417698699b124695
