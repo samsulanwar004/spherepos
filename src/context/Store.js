@@ -1,6 +1,6 @@
 import React, {createContext, useReducer} from "react";
 import combineReducers from 'react-combine-reducers';
-import {Auth} from './Reducer';
+import {Auth, Cart} from './Reducer';
 
 const initialAuth = {
     account: null,
@@ -8,8 +8,13 @@ const initialAuth = {
     isLoading: true
 };
 
+const initialCart = {
+    bags: Array(),
+};
+
 const [globalReducer, initialGlobal] = combineReducers({
-    auth: [Auth, initialAuth]
+    auth: [Auth, initialAuth],
+    cart: [Cart, initialCart],
 });
 
 const Store = ({children}) => {
