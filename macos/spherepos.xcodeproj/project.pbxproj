@@ -20,6 +20,7 @@
 		6265237E6467CC165CDFA395 /* libPods-spherepos-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24419BE6083387117B77A948 /* libPods-spherepos-iOS.a */; };
 		CC295574260C780D00FA67B8 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = CC295573260C780D00FA67B8 /* Fonts */; };
 		CC295575260C780D00FA67B8 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = CC295573260C780D00FA67B8 /* Fonts */; };
+		CC5BBB442627FDB70070DC8E /* www in Resources */ = {isa = PBXBuildFile; fileRef = CC5BBB432627FDB70070DC8E /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9D32DFD059D5DB6DDEF38881 /* Pods-Shared-spherepos-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-spherepos-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Shared-spherepos-iOS/Pods-Shared-spherepos-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A82DFB63B157C65E5D698CA2 /* Pods-Shared-spherepos-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-spherepos-iOS.release.xcconfig"; path = "Target Support Files/Pods-Shared-spherepos-iOS/Pods-Shared-spherepos-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CC295573260C780D00FA67B8 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
+		CC5BBB432627FDB70070DC8E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		CE0E74F571E1F48FF00A8324 /* Pods-Shared-spherepos-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-spherepos-macOS.release.xcconfig"; path = "Target Support Files/Pods-Shared-spherepos-macOS/Pods-Shared-spherepos-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		D7B3C7E2D37A6B8F79F5AB19 /* Pods-spherepos-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spherepos-iOS.debug.xcconfig"; path = "Target Support Files/Pods-spherepos-iOS/Pods-spherepos-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,7 @@
 		5142014A2437B4B30078DB4F /* spherepos-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				CC5BBB432627FDB70070DC8E /* www */,
 				38423A3E24576CBC00BC2EAC /* main.jsbundle */,
 				5142014B2437B4B30078DB4F /* AppDelegate.h */,
 				5142014C2437B4B30078DB4F /* AppDelegate.m */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5BBB442627FDB70070DC8E /* www in Resources */,
 				CC295575260C780D00FA67B8 /* Fonts in Resources */,
 				514201522437B4B40078DB4F /* Assets.xcassets in Resources */,
 				514201552437B4B40078DB4F /* Main.storyboard in Resources */,
