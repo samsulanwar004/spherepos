@@ -8,14 +8,14 @@
 
   <Identity
     Name="7d39601a-54e4-4d79-885e-19602cb57e6e"
-    Publisher="CN=samrock"
+    Publisher="CN=Samsul Anwar"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="7d39601a-54e4-4d79-885e-19602cb57e6e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>spherepos</DisplayName>
-    <PublisherDisplayName>samrock</PublisherDisplayName>
+    <PublisherDisplayName>samsul anwar</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
