@@ -33,7 +33,7 @@ jobs:
     - name: cert
       shell: powershell
       run: |
-          Write-Host "Import Certificate" $pfxpath = '$(Build.SourcesDirectory)\windows\spherepos\spherepos_TemporaryKey.pfx'
+          Write-Host "Import Certificate" $pfxpath = '$(Build.SourcesDirectory)\spherepos\spherepos_TemporaryKey.pfx'
 
           $password = 'password'
 
