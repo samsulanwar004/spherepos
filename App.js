@@ -5,15 +5,15 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Store from './src/context/Store';
 import SQLite from 'react-native-sqlite-storage';
 
-global.db = SQLite.openDatabase(
-  {name:'testDB.db', createFromLocation:1},
-  () => { 
-  	console.log('INFO: Connection successfully')
-  },
-  error => {
-    console.log("ERROR: " + error);
-  }
-);
+// global.db = SQLite.openDatabase(
+//   {name:'testDB.db', createFromLocation:1},
+//   () => { 
+//   	console.log('INFO: Connection successfully')
+//   },
+//   error => {
+//     console.log("ERROR: " + error);
+//   }
+// );
 
 export default function App() {
   return (

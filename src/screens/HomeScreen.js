@@ -79,27 +79,27 @@ function HomeScreen({ navigation }) {
 	}, [navigation]);
 
 	useEffect(() => {
-		db.transaction((tx) => {
-		  	tx.executeSql('SELECT * FROM users', [], (tx, results) => {
-		      console.log("Query completed");
+		// db.transaction((tx) => {
+		//   	tx.executeSql('SELECT * FROM users', [], (tx, results) => {
+		//       console.log("Query completed");
 
-		      // Get rows with Web SQL Database spec compliance.
+		//       // Get rows with Web SQL Database spec compliance.
 
-		      var len = results.rows.length;
-		      for (let i = 0; i < len; i++) {
-		        let row = results.rows.item(i);
-		        console.log(`user name: ${row.name}, username: ${row.username}`);
-		      }
+		//       var len = results.rows.length;
+		//       for (let i = 0; i < len; i++) {
+		//         let row = results.rows.item(i);
+		//         console.log(`user name: ${row.name}, username: ${row.username}`);
+		//       }
 
-		      // Alternatively, you can use the non-standard raw method.
+		//       // Alternatively, you can use the non-standard raw method.
 
-		      /*
-		        let rows = results.rows.raw(); // shallow copy of rows Array
+		//       /*
+		//         let rows = results.rows.raw(); // shallow copy of rows Array
 
-		        rows.map(row => console.log(`Employee name: ${row.name}, Dept Name: ${row.deptName}`));
-		      */
-		    });
-		});
+		//         rows.map(row => console.log(`Employee name: ${row.name}, Dept Name: ${row.deptName}`));
+		//       */
+		//     });
+		// });
 	}, [])
 
 	logout = () => 
