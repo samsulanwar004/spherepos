@@ -53,6 +53,15 @@ const datas = [
 	{id: 16, nama: 'Sabun Telinga', price: 2000},
 	{id: 17, nama: 'Sabun Telinga', price: 2000},
 	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
+	{id: 18, nama: 'Sabun Telinga', price: 2000},
 ];
 
 function HomeScreen({ navigation }) {
@@ -138,7 +147,7 @@ function HomeScreen({ navigation }) {
 	  	<ThemeProvider theme={theme}>
 			<View style={{ flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', backgroundColor: '#ffffff'}}>
 				<View style={{flex: 2, flexDirection: 'column' }}>
-					<View style={{marginTop: 20, backgroundColor: '#ffffff'}}>
+					<View style={{marginTop: 20, backgroundColor: '#ffffff', elevation: 2, borderBottomWidth: 0.5, borderBottomColor: 'grey'}}>
 						<Input
 				          autoCapitalize="none"
 				          autoCorrect={false}
@@ -147,7 +156,7 @@ function HomeScreen({ navigation }) {
 						  }
 				        />
 					</View>
-					<ScrollView style={{flex: 1, flexWrap: 'wrap', padding: 10, flexDirection: 'row'}}>
+					<ScrollView contentContainerStyle={{flexDirection: 'row', flexWrap: 'wrap', padding: 10}}>
 						{datas.map((data, key) => {
 							return (
 								<View 
@@ -174,7 +183,7 @@ function HomeScreen({ navigation }) {
 							)
 						})}
 					</ScrollView>
-					<View style={{marginTop: 20, flexDirection: 'row', backgroundColor: '#ffffff'}}>
+					<View style={{paddingTop: 20, flexDirection: 'row', backgroundColor: '#ffffff', elevation: 2, borderTopWidth: 0.5, borderTopColor: 'grey'}}>
 						<View style={{flex: 2}}>
 							<Input
 								ref={barcodeRef}
@@ -211,7 +220,7 @@ function HomeScreen({ navigation }) {
 				</View>
 				<View style={{flex: 1, flexDirection: 'column', backgroundColor: '#F7F6F6', height: '100%'}}>
 					<Text h4 style={{color: 'black', textAlign: 'center' }}>Detail</Text>
-					<ScrollView style={{flex: 1, flexDirection: 'column', backgroundColor: '#f9fafe', marginBottom: '40%'}}>
+					<ScrollView style={{flex: 1, flexDirection: 'column', backgroundColor: '#f9fafe', marginBottom: '45%'}}>
 						{state.cart.bags.map((data, key) => {
 							return (
 								<ListItem
@@ -250,9 +259,9 @@ function HomeScreen({ navigation }) {
 						  	containerStyle={{backgroundColor: '#f9fafe'}}
 						>
 						    <ListItem.Content>
-						      	<ListItem.Title style={{color: '#4F4F4F', fontWeight: 'bold'}}>Total</ListItem.Title>
+						      	<ListItem.Title style={{color: '#4F4F4F', fontWeight: 'bold', fontSize: 30}}>Total</ListItem.Title>
 						    </ListItem.Content>
-						    <ListItem.Title style={{color: '#4F4F4F'}}>{total()}</ListItem.Title>
+						    <ListItem.Title style={{color: '#4F4F4F', fontSize: 30}}>{total()}</ListItem.Title>
 						</ListItem>
 			          	<Button title="Bayar" onPress={() => alert('-->')} />
 			        </View>
@@ -266,7 +275,7 @@ const styles = StyleSheet.create({
   containerButton: {
     width: '100%',
     position: 'absolute',
-    bottom: 5 
+    bottom: 10
   }
 });
 
