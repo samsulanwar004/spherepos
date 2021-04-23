@@ -79,27 +79,7 @@ function HomeScreen({ navigation }) {
 	}, [navigation]);
 
 	useEffect(() => {
-		db.transaction((tx) => {
-		  	tx.executeSql('SELECT * FROM users', [], (tx, results) => {
-		      console.log("Query completed");
 
-		      // Get rows with Web SQL Database spec compliance.
-
-		      var len = results.rows.length;
-		      for (let i = 0; i < len; i++) {
-		        let row = results.rows.item(i);
-		        console.log(`user name: ${row.name}, username: ${row.username}`);
-		      }
-
-		      // Alternatively, you can use the non-standard raw method.
-
-		      /*
-		        let rows = results.rows.raw(); // shallow copy of rows Array
-
-		        rows.map(row => console.log(`Employee name: ${row.name}, Dept Name: ${row.deptName}`));
-		      */
-		    });
-		});
 	}, [])
 
 	logout = () => 
@@ -167,7 +147,7 @@ function HomeScreen({ navigation }) {
 						  }
 				        />
 					</View>
-					<View style={{flex: 1, flexWrap: 'wrap', padding: 10, flexDirection: 'row'}}>
+					<ScrollView style={{flex: 1, flexWrap: 'wrap', padding: 10, flexDirection: 'row'}}>
 						{datas.map((data, key) => {
 							return (
 								<View 
@@ -193,7 +173,7 @@ function HomeScreen({ navigation }) {
 								</View>
 							)
 						})}
-					</View>
+					</ScrollView>
 					<View style={{marginTop: 20, flexDirection: 'row', backgroundColor: '#ffffff'}}>
 						<View style={{flex: 2}}>
 							<Input
