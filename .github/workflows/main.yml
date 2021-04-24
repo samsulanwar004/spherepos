@@ -29,7 +29,7 @@ jobs:
     - name: Install node modules
       if: steps.yarn-cache.outputs.cache-hit != 'true'
       run: yarn --pure-lockfile
-    
+        
     - name: yarn build
       if: steps.yarn-cache.outputs.cache-hit == 'true'
       run: |
@@ -37,7 +37,7 @@ jobs:
         yarn tsc
     - name: Build x64 release
       shell: powershell
-      run: npx react-native run-windows --root example --arch x64 --release --no-packager --no-deploy --logging
+      run: npx react-native run-windows --arch x64 --release --no-packager --no-deploy --logging
 
     # Workaround for a bug in package searching during deploy.
     # The deploy script only searches windows/{*/bin/x64/Release,Release/*}, but the build step above placed the pakcages at windows/x64/Release.
